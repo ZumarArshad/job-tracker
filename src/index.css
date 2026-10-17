@@ -1,0 +1,85 @@
+:root {
+  /* Brand — from sidebar active/logo blues */
+  --color-primary: #2563eb;
+  --color-primary-strong: #3b82f6;
+  --color-primary-soft: #eaf3ff;
+  --color-primary-muted: #dbeafe;
+
+  /* Surfaces */
+  --color-bg: #f5f8fc;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #687386;
+  --color-text-heading: #172033;
+  --color-text-strong: #1f2937;
+  --color-text-muted: #9aa3b2;
+  --color-text-subtle: #8b95a5;
+
+  /* Borders */
+  --color-border: #e9edf2;
+  --color-border-muted: #edf0f4;
+
+  /* Status */
+  --color-success: #10b981;
+  --color-success-soft: #d1fae5;
+  --color-warning: #f59e0b;
+  --color-warning-soft: #fef3c7;
+  --color-danger: #ef4444;
+  --color-danger-soft: #fee2e2;
+
+  /* Layout */
+  --sidebar-width: 250px;
+  --radius-sm: 7px;
+  --radius-md: 9px;
+  --radius-lg: 11px;
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--color-text-heading);
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
